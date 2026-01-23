@@ -1,10 +1,9 @@
-name: automatic-run
+name: manual run
 
 on:
-  # This makes it run automatically every day at midnight UTC
   schedule:
+    # This triggers the run every day at midnight
     - cron: "0 0 * * *"
-  # This keeps your manual button
   workflow_dispatch:
 
 jobs:
