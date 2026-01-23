@@ -2,8 +2,8 @@ name: Automatic Run
 
 on:
   schedule:
-    # This triggers the run every day at midnight
-    - cron: "0 0 * * *"
+   # This triggers the run every Sunday at midnight UTC (once per week)
+    - cron: "0 0 * * 0"
   workflow_dispatch:
 
 jobs:
